@@ -30,7 +30,7 @@ Powered by the **Gemini AI API**, this tool analyzes your code to identify error
 
 ## 📸 Demo
 
-> Coming Soon / [Insert link or screenshots here]
+> Coming Soon 
 
 ---
 

@@ -1,0 +1,101 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+main{
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+main .left,
+main .right {
+  height: 100%;
+  flex-basis: 50%;
+  border-radius: 0.7rem;
+}
+
+main .left{
+  background-color: black;
+  position: relative;
+}
+
+.left .code, 
+.code pre,
+.code pre code{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  border-radius: 0.7rem;
+  background-color: #100909;
+}
+
+main .left .review{
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: rgb(248, 237, 227);
+  color: black;
+  padding: 0.5rem 2rem;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 0.475rem;
+  user-select: none;
+}
+
+main .right{
+  background-color: rgb(58, 58, 58);
+  padding: 1rem 2rem;
+  color: white;
+  font-family: 'Fira Code', monospace;
+  overflow-y: auto; /* Makes content scrollable */
+  white-space: pre-wrap; /* Preserves formatting */
+  word-wrap: break-word;
+}
+
+
+main .right::-webkit-scrollbar {
+  width: 8px;
+}
+
+main .right::-webkit-scrollbar-track {
+  background: #3a3a3a;
+}
+
+main .right::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+main .right::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* .error-message {
+  position: absolute;
+  bottom: 5rem;
+  right: 1rem;
+  color: #ff6b6b;
+  background: rgba(255, 107, 107, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+button.review:disabled {
+  background-color: #cccccc !important;
+  cursor: not-allowed;
+  transform: none !important;
+  box-shadow: none !important;
+} */
